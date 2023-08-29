@@ -1,0 +1,255 @@
+/* Reseteo valores */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* HEADER */
+header{
+    /* border */
+    padding: 40px;
+    border-bottom: 2px solid gray;
+}
+
+header img{
+    width: 9rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+/* Section */
+
+.carousel-item {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.imgnormalizada img {
+    width: 230px;
+    height: 200px;
+    object-fit: cover; 
+  }
+
+.seccion-dos{
+    font-family: 'Open Sans', sans-serif;
+    display: flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 5px 25px;
+}
+
+.section-dos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.seccion-dos p{
+    color: #595959;
+    padding: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.seccion-dos iframe{
+    padding: 5px;
+}
+
+.seccion-dos .img-historia{
+    width: 300px;
+    padding: 10px;
+}
+
+#mapa{
+    height: 250px;
+}
+
+/* CARDS - Principales Atracciones*/
+.card{
+    margin:10px;
+}
+
+.card-img-top{
+    width: 230px;
+    height: 200px;
+    
+}
+.card-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    margin:6px;
+
+}
+
+
+/*GRID - Pueblos Mágicos */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+    grid-gap: 10px;
+}
+
+.grid-item{
+    position: relative;
+}
+
+.grid-img{
+    width:100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.grid-title{
+    position: absolute;
+    bottom:0;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.grid-title h2{
+    font-size: 0.8rem;
+}
+.grid-title h3{
+    font-size: 1.5rem;
+}
+
+
+
+/* Responsive GRID con media query - Para Tablet*/
+@media (min-width: 768px) and (max-width: 960px){
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-item:nth-child(1){
+        grid-column-start: span 2;
+    }
+    .grid-item:nth-child(3){
+        grid-row-start: span 2;
+    }
+    .grid-item:nth-child(6){
+        grid-column-start: span 2;
+    }
+}
+/* Responsive GRID con media query - para Pantalla Computadora*/
+@media (min-width: 961px){
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-item:nth-child(1){
+        grid-column-start: span 2;
+    }
+    .grid-item:nth-child(2){
+        grid-column-start: span 2;
+    }
+    .grid-item:nth-child(3){
+        grid-row-start: span 2;
+    }
+    .grid-item:nth-child(4){
+        grid-column-start: span 2;
+    }
+    .grid-item:nth-child(6){
+        grid-column-start: span 3;
+    }
+}
+/* Diseño Formulario */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-container form{
+    height: 100% ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1rem;
+    
+}
+
+
+/* Footer */
+footer{
+
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    color: gray;
+    font-size: 0.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Responsive con media query*/
+@media (min-width: 321px) and (max-width: 767px){
+
+    .imgnormalizada img {
+        width: 230px;
+        height: 250px;
+      }
+}
+/* Responsive con media query para Tablet*/
+@media (min-width: 768px) and (max-width: 960px){
+    .section-dos h1{
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .section-dos p{
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .imgnormalizada img {
+        width: 230px;
+        height: 300px;
+      }
+}
+/* Responsive con media query para Pantalla Computadora*/
+@media (min-width: 961px){
+    .seccion-dos h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+    .seccion-dos p{
+        font-size: 1rem;
+        text-align:left;
+    }
+    .imgnormalizada img {
+        width: 180px;
+        height: 600px;
+      }
+    footer{
+        font-size: 0.8rem;
+    } 
+
+}
