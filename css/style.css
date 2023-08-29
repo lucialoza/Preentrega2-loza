@@ -39,13 +39,14 @@ header nav ul li a{
 
 .seccion-dos{
     font-family: 'Open Sans', sans-serif;
-    display: flex ;
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
     margin: 5px 25px;
+    width: 100%;
+    height: 100%;
 }
 
 .section-dos h1{
@@ -228,7 +229,17 @@ footer img{
         font-size: 0.9rem;
         text-align: left;
     }
-
+    .seccion-dos .item-uno{
+        width: 70%;
+        height: 100%;
+        padding: 10px;
+    }
+    .seccion-dos .item-dos{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
     .imgnormalizada img {
         width: 230px;
         height: 300px;
@@ -248,6 +259,17 @@ footer img{
         width: 180px;
         height: 600px;
       }
+      .seccion-dos .item-uno{
+        width: 70%;
+        height: 100%;
+        padding: 10px;
+    }
+    .seccion-dos .item-dos{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }  
     footer{
         font-size: 0.8rem;
     } 
