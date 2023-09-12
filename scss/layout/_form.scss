@@ -1,21 +1,55 @@
-
 /* Diseño Formulario */
 
-.contacto-container{
+.container-contacto{
+    font-family: $font;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
     
-    .form-container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        form{
-            height: 100% ;
-            width: 100%;
-            font-family: $font;
-            font-size: 1rem;
-            
+    form{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+        h1{
+            color: $color-font;
+            font-size: 35px;
+        }
+        p{
+            color: $color-font;
+            font-size: 15px;
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            label{
+                color: #283629;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            input{
+                padding: 10px;
+                border-radius: 8px;
+                background-color: #DEBD9C;
+                border: 2px solid #F0FAF1;
+                color: $color-font;
+            }
+            textarea{
+                @extend input;
+            }
+            .btn{
+                font-size: 16px;
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 0 20px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
         }
     }
 }
