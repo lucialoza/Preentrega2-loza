@@ -15,7 +15,14 @@
 
     <!--Link con Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
+    
+    <!--LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--LINK LIBRERIA ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #FFFFFF;">
@@ -50,33 +57,33 @@
 
     <main>
       <section class="seccion-dos">
-        <div class="item-uno">
+        <div class="item-uno animate__animated animate__backInLeft">
           <h1>Principales Atracciones</h1>
           <p>Visitar la Ciudad de México es descubrir la capital de México y la ciudad más grande del país. Conocida también como Distrito Federal o CDMX, la capital mexicana está rodeada por varias cadenas montañosas a una altitud de 2250m. <br><br> Si vas a ir de viaje por ciudad de México debes planear muy bien los tiempos puesto que la ciudad es grande y el tráfico pesado, para ayudarte a organizar tu próximo itinerario, a continuación encontrarás una lista de los que consideramos son los mejores lugares para visitar y las principales atracciones turísticas en ciudad de México.
           </p>
         </div>
         <div class="item-dos"></div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img class="card-img-top" src="../img/Bosque-chapultepec.jpeg" alt="Bosque-chapultepec">
             <h5 class="card-title">Bosque Chapultepec</h5>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img class="card-img-top" src="../img/Museo-antropologia.jpeg" alt="Museo-antropologia">
             <h5 class="card-title">Museo de Antropología</h5>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img class="card-img-top" src="../img/Bellas-artes2.jpeg" alt="Bellas-artes">
             <h5 class="card-title">Palacio de Bellas Artes</h5>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img class="card-img-top" src="../img/Museo-Frida.jpeg" alt="Museo-frida">
             <h5 class="card-title">Museo de Frida Kahlo</h5>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img class="card-img-top" src="../img/Teotihuacan.jpeg" alt="Teotihuacan">
             <h5 class="card-title">Pirámides de Teotihuacan</h5>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img class="card-img-top" src="../img/Zocalo.jpeg" alt="Zocalo">
             <h5 class="card-title">El Zócalo</h5>
           </div>
@@ -96,6 +103,11 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
 </body>
 </html>
