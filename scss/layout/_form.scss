@@ -1,0 +1,21 @@
+
+/* Diseño Formulario */
+
+.contacto-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    .form-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        form{
+            height: 100% ;
+            width: 100%;
+            font-family:'Open Sans', sans-serif;
+            font-size: 1rem;
+            
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Responsive con media query
+
+@media (min-width: 321px) and (max-width: 767px){
+  .section-uno{
+    #carouselExampleAutoplaying{
+        .carousel-inner{
+            .imgnormalizada{
+                img{
+                  width: 230px;
+                  height: 250px;
+                }
+            }
+        }
+    }
+  }
+}

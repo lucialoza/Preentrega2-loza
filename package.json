@@ -1,0 +1,14 @@
+{
+  "name": "preentrega-3---loza",
+  "version": "1.0.0",
+  "description": "Esta es mi preentrega número 2 - Lucía Loza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

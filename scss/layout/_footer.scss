@@ -1,0 +1,16 @@
+/* Footer */
+footer{
+
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    color: gray;
+    font-size: 0.6rem;
+    font-family: 'Open Sans', sans-serif;
+
+    img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

@@ -1,0 +1,17 @@
+/* CARDS - Principales Atracciones*/
+
+.card{
+    margin:10px;
+    .card-img-top{
+        width: 230px;
+        height: 200px;
+    }
+    .card-title{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: left;
+        margin:6px;
+    }
+}

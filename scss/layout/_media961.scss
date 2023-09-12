@@ -1,0 +1,65 @@
+/* Responsive GRID con media query - para Pantalla Computadora*/
+
+@media (min-width: 961px){
+
+    .section-uno{
+        #carouselExampleAutoplaying{
+            .carousel-inner{
+                .imgnormalizada{
+                    img{
+                        width: 180px;
+                        height: 1000px;
+                    }
+                }
+            }
+        }
+    }
+   
+    .seccion-dos{
+        h1{
+            font-size: 2rem;
+            text-align: left;
+        }
+        p{
+            font-size: 1rem;
+            text-align: left;
+        }
+        .item-uno{
+            width: 70%;
+            height: 100%;
+            padding: 10px;
+        }
+        .item-dos{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .grid-container{
+            grid-template-columns: repeat(6, 1fr);
+            .grid-item:nth-child(1){
+                grid-column-start: span 3;
+            }
+            .grid-item:nth-child(2){
+                grid-column-start: span 3;
+            }
+            .grid-item:nth-child(3){
+                grid-column-start: span 2;
+                grid-row-start: span 2;
+            }
+            .grid-item:nth-child(4){
+                grid-column-start: span 2;
+            }
+            .grid-item:nth-child(5){
+                grid-column-start: span 2;
+            }
+            .grid-item:nth-child(6){
+                grid-column-start: span 4;
+            }
+        }  
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+}

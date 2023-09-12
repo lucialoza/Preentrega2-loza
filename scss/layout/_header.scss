@@ -1,0 +1,25 @@
+//HEADER
+
+header{
+
+    //border
+    padding: 30px;
+    border-bottom: 2px solid gray;
+
+    nav{
+        .container-fluid{
+            img{
+                width: 9rem;
+            }
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 500;
+                    }
+                }
+            }
+        } 
+    }
+}

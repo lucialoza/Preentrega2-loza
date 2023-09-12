@@ -1,0 +1,56 @@
+/* Responsive GRID con media query - Para Tablet*/
+
+@media (min-width: 768px) and (max-width: 960px){
+    
+    .section-uno{
+        #carouselExampleAutoplaying{
+            .carousel-inner{
+                .imgnormalizada{
+                    img{
+                        width: 230px;
+                        height: 300px;
+                    }                
+                }
+            }
+        }
+    }
+
+    .section-dos{
+        .item-uno{
+            h1{
+                font-size: 1.5rem;
+                text-align: left;
+            }
+            p{
+                font-size: 0.9rem;
+                text-align: left;
+            }
+            .item-uno{
+                width: 70%;
+                height: 100%;
+                padding: 10px;
+            }
+            .item-dos{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .grid-container{
+            grid-template-columns: repeat(3, 1fr);
+            .grid-item:nth-child(1){
+                grid-column-start: span 2;
+            }
+            .grid-item:nth-child(3){
+                grid-row-start: span 2;
+            }
+            .grid-item:nth-child(5){
+                grid-column-start: span 2;
+            }
+            .grid-item:nth-child(6){
+                grid-column-start: span 2;
+            }
+        }
+    }    
+}
