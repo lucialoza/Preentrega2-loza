@@ -15,8 +15,12 @@ header{
                 li{
                     a{
                         text-decoration: none;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: $font;
                         font-weight: 500;
+
+                        &:hover{
+                            color: red;
+                        }
                     }
                 }
             }

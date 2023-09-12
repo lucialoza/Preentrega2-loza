@@ -1,21 +1,27 @@
 // SECTION-DOS
 
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
 .seccion-dos{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
-    width: 100%;
-    height: 100%;
+    @include sizes(100%, 100%);
+    
     .item-uno{
         h1{
             font-size: 1rem;
+            color: $color-font;
             text-align: center;
         }
         p{
-            color: #595959;
+            color: $color-font;
             padding: 5px;
             font-size: 0.7rem;
             text-align: center;
@@ -26,10 +32,10 @@
             padding: 5px;
         }
         #mapa{
-            height: 250px;
+            @include sizes(,250px);
         }
         .img-historia{
-            width: 300px;
+            @include sizes(300px,)
             padding: 10px;
         }
     }

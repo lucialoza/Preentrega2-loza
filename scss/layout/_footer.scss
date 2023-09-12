@@ -5,9 +5,9 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 4px;
-    color: gray;
+    color: $color-font;
     font-size: 0.6rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font;
 
     img{
         width: 1.5rem;
